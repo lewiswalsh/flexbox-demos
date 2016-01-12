@@ -1,0 +1,18 @@
+
+	@import 'init';
+
+	.flexbox-8 {
+		height : 350px;
+	}
+
+
+	.flexbox-9-1 {
+    display     : flex;
+	  section {
+			flex-grow : 1;
+			&.section-2 {
+				flex-basis : 200px;
+				flex-shrink : 0;
+			}
+		}
+  }

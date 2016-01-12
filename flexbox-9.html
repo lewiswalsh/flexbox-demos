@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Flexbox 9 - Flex Shrink and Basis</title>
+  <meta name='description' content=''>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='css/flexbox-9.css' rel='stylesheet' media='all'>
+</head>
+<body>
+
+  <header role='banner'>
+    <h1>Flexbox 9 - Flex Shrink and Basis</h1>
+  </header>
+
+    <p><span>flex-shrink</span> when set to 0 tells the browser not to shrink an element if the computed size is less than the specified size.</p>
+    <p><span>flex-basis</span> either takes <span>auto</span> or a width/height which specifies the initial size before the rest of the space is distributed.</p>
+
+    <div class='container flexbox-9 flexbox-9-1'>
+      <section>1</section>
+      <section class='section-2'>2</section>
+      <section>3</section>
+    </div>
+    <p>9-1. Section 2 has <span>flex-basis : 200px;</span> and <span>flex-shink : 0;</span></p>
+
+
+
+  <footer role='contentinfo'>
+    <small>Copyright &copy; <time datetime='2016'>2016</time></small>
+  </footer>
+
+</body>
+</html>

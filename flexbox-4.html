@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Flexbox 4 - Order</title>
+  <meta name='description' content=''>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='css/flexbox-4.css' rel='stylesheet' media='all'>
+</head>
+<body>
+
+  <header role='banner'>
+    <h1>Flexbox 4 - Order</h1>
+  </header>
+
+    <p>By default items appear in the order they appear in the markup (with direction determined by <span>flex-direction</span>).</p>
+    <p>We can change the specific order of child elements by setting their <span>order</span> number. Any element without a specified number has the <span>order</span> value 0.</p>
+
+    <div class='container flexbox-4-1'>
+      <div class='redsquare'>1</div>
+      <div class='redsquare square-2'>2</div>
+      <div class='redsquare'>3</div>
+    </div>
+    <p>4-1. square 2 has <span>order : 2;</span></p>
+
+    <div class='container flexbox-4 flexbox-4-2'>
+      <div class='redsquare'>1</div>
+      <div class='redsquare'>2</div>
+      <div class='redsquare square-3'>3</div>
+    </div>
+    <p>4-2. square 3 has <span>order : -99;</span></p>
+
+
+  <footer role='contentinfo'>
+    <small>Copyright &copy; <time datetime='2016'>2016</time></small>
+  </footer>
+
+</body>
+</html>

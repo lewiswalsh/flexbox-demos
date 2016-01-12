@@ -1,0 +1,74 @@
+
+	$main_font : Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  $mono_font : 'Consolas', monospace;
+
+	//@import 'includes/reset';
+	@import 'includes/mixins';
+	@import 'includes/utils';
+	@import 'includes/print';
+
+	html {
+		font-size : 62.5%;
+	}
+
+	body {
+		font-family : $main_font;
+    margin      : 30px;
+		text-align  : left;
+	}
+
+	p, table {
+		@include font-size(1.6);
+		margin  : 0;
+		padding : 0;
+		line-height : 1.2;
+    span {
+      font-family : $mono_font;
+      background  : #ddd;
+    }
+	}
+
+	ol {
+		@include font-size(1.6);
+		//margin  : 0;
+		//padding : 0;
+		line-height : 1.2;
+	}
+
+  .redsquare {
+		@include font-size(2);
+    width      : 100px;
+    min-height : 100px;
+    background : red;
+		color      : #fff;
+		margin     : 2px;
+		padding    : 5px;
+		box-sizing : border-box;
+  }
+
+	section {
+		@include font-size(2);
+    background : green;
+		color      : #fff;
+		margin     : 2px;
+		padding    : 5px;
+		box-sizing : border-box;
+	}
+
+  header, footer {
+    margin : 20px 0;
+    h1 {
+      @include font-size(3);
+    }
+		small {
+			@include font-size(1);
+		}
+	}
+
+  .container {
+		//@extend %cf;
+		max-width : 600px;
+    margin-top : 15px;
+    padding    : 10px;
+    border     : 1px solid blue;
+	}

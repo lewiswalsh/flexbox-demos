@@ -1,0 +1,30 @@
+
+	@import 'init';
+
+	.flexbox-8 {
+		height : 350px;
+	}
+
+	.flexbox-8-1 {
+    display     : flex;
+	  section {
+			flex-grow : 0;
+		}
+  }
+
+	.flexbox-8-2 {
+    display     : flex;
+	  section {
+			flex-grow : 2;
+		}
+  }
+
+	.flexbox-8-3 {
+    display     : flex;
+	  section {
+			flex-grow : 1;
+			&.section-2 {
+				flex-grow : 3;
+			}
+		}
+  }

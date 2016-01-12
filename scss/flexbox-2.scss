@@ -1,0 +1,43 @@
+
+	@import 'init';
+
+	.flexbox-2 {
+		height : 300px;
+	}
+
+  .flexbox-2-1 {
+    display     : flex;
+    align-items : flex-start;
+  }
+
+  .flexbox-2-2 {
+    display     : flex;
+    align-items : center;
+  }
+
+  .flexbox-2-3 {
+    display     : flex;
+    align-items : flex-end;
+  }
+
+  .flexbox-2-4 {
+    display     : flex;
+    align-items : baseline;
+  }
+
+  .flexbox-2-5 {
+    display     : flex;
+    align-items : stretch;
+  }
+
+  .flexbox-2-6 {
+    display         : flex;
+    justify-content : center;
+		align-items     : center;
+  }
+
+  .flexbox-2-7 {
+    display         : flex;
+    justify-content : space-around;
+		align-items     : stretch;
+  }

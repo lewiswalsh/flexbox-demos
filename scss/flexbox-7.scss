@@ -1,0 +1,54 @@
+
+	@import 'init';
+
+	.flexbox-7 {
+		height : 350px;
+	}
+
+	.flexbox-7-1 {
+    display     : flex;
+		align-items : flex-start;
+		flex-wrap   : wrap;
+  }
+
+	.flexbox-7-2 {
+    display       : flex;
+		align-items   : flex-start;
+		flex-wrap     : wrap;
+		align-content : flex-start;
+  }
+
+	.flexbox-7-3 {
+    display       : flex;
+		align-items   : flex-start;
+		flex-wrap     : wrap;
+		align-content : flex-end;
+  }
+
+	.flexbox-7-4 {
+    display       : flex;
+		align-items   : flex-start;
+		flex-wrap     : wrap;
+		align-content : center;
+  }
+
+	.flexbox-7-5 {
+    display       : flex;
+		align-items   : flex-start;
+		flex-wrap     : wrap;
+		align-content : space-between;
+  }
+
+	.flexbox-7-6 {
+    display       : flex;
+		align-items   : flex-start;
+		flex-wrap     : wrap;
+		align-content : space-around;
+  }
+
+	.flexbox-7-7 {
+    display       : flex;
+		align-items   : flex-start;
+		flex-wrap     : wrap;
+		align-content : stretch;
+  }

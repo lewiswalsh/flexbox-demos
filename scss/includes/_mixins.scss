@@ -9,18 +9,18 @@
 		background-image:         linear-gradient(top, $fromColor, $toColor);
 		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
 	}
-	
+
 	@mixin font-size($sizeValue: 1.6){
 		font-size: ($sizeValue * 10) + px;
 		font-size: $sizeValue + rem;
 	}
-	
+
 	@mixin rotate($deg){
 		transform: 			rotate($deg + deg);
 		-ms-transform: 		rotate($deg + deg); /* IE 9 */
 		-webkit-transform: 	rotate($deg + deg); /* Opera, Chrome, and Safari */
 	}
-	
+
 	@mixin rounded-corners($tl, $tr, $bl, $br){
 		-webkit-border-top-left-radius: 	$tl;
 		-webkit-border-top-right-radius: 	$tr;
@@ -35,8 +35,8 @@
 		border-bottom-right-radius: 	$bl;
 		border-bottom-left-radius: 		$br;
 	}
-	
-	
+
+
 	@mixin maintain_ratio($ratio: 1 1) {
 		@if length($ratio) < 2 or length($ratio) > 2 {
 			@warn "$ratio must be a list with two values.";
@@ -44,8 +44,7 @@
 
 		$width: 100%;
 		$height: percentage(nth($ratio, 2) / nth($ratio, 1));
-
-		width: $width;
-		height: 0;
-		padding-bottom: $height;
+		width : $width;
+		height : 0;
+		padding-bottom : $height;
 	}

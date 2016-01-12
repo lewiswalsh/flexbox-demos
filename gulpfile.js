@@ -1,10 +1,11 @@
 
-  var gulp    = require('gulp');
-  var sass    = require('gulp-sass');
-  var cssNano = require('gulp-cssnano');
-  //var uglify    = require('gulp-uglify');
-  //var concat    = require('gulp-concat');
-  var watch   = require('gulp-watch');
+  var gulp         = require('gulp');
+  var sass         = require('gulp-sass');
+  var cssNano      = require('gulp-cssnano');
+  var autoprefixer = require('gulp-autoprefixer');
+  //var uglify     = require('gulp-uglify');
+  //var concat     = require('gulp-concat');
+  var watch        = require('gulp-watch');
 
   var paths = {
     src : {
@@ -20,6 +21,11 @@
   gulp.task('css', function(){
     return gulp.src(paths.src.sass)
       .pipe(sass())
+      .pipe(autoprefixer({
+  			   browsers : ['last 2 versions'],
+  			   cascade  : false
+  		  })
+      )
       .pipe(cssNano())
       .pipe(gulp.dest(paths.dist.css));
   });

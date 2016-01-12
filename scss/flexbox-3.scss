@@ -1,0 +1,26 @@
+
+	@import 'init';
+
+	.flexbox-3 {
+		height : 350px;
+	}
+
+  .flexbox-3-1 {
+    display     : flex;
+		flex-direction : row;
+  }
+
+  .flexbox-3-2 {
+    display     : flex;
+		flex-direction : row-reverse;
+  }
+
+  .flexbox-3-3 {
+    display     : flex;
+		flex-direction : column;
+  }
+
+  .flexbox-3-4 {
+    display     : flex;
+		flex-direction : column-reverse;
+  }

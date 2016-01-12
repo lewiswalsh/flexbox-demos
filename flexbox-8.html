@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>Flexbox 8 - Flex Grow</title>
+  <meta name='description' content=''>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href='css/flexbox-8.css' rel='stylesheet' media='all'>
+</head>
+<body>
+
+  <header role='banner'>
+    <h1>Flexbox 8 - Flex Grow</h1>
+  </header>
+
+    <p><span>flex-grow</span> specifies how much of the distributed space a child takes up.</p>
+
+    <div class='container flexbox-8 flexbox-8-1'>
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+    </div>
+    <p>8-1. each section has <span>flex-grow : 0;</span> <em>(default behaviour)</em></p>
+
+    <div class='container flexbox-8 flexbox-8-2'>
+      <section>1</section>
+      <section>2</section>
+      <section>3</section>
+    </div>
+    <p>8-2. each section has <span>flex-grow : 1;</span> <em>(number doesn't matter if all the same)</em></p>
+
+    <div class='container flexbox-8 flexbox-8-3'>
+      <section>1</section>
+      <section class='section-2'>2</section>
+      <section>3</section>
+    </div>
+    <p>8-3. each section has <span>flex-grow : 1;</span> except 2 which is set to <span>flex-grow : 3;</span> so is three times the size of the others (3:1 ratio)</p>
+
+
+
+
+  <footer role='contentinfo'>
+    <small>Copyright &copy; <time datetime='2016'>2016</time></small>
+  </footer>
+
+</body>
+</html>

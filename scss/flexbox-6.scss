@@ -1,0 +1,24 @@
+
+	@import 'init';
+
+	.flexbox-6 {
+		height : 350px;
+	}
+
+	.flexbox-6-1 {
+    display     : flex;
+		align-items : flex-start;
+		flex-wrap   : nowrap;
+  }
+
+	.flexbox-6-2 {
+    display     : flex;
+		align-items : flex-start;
+		flex-wrap   : wrap;
+  }
+
+	.flexbox-6-3 {
+    display     : flex;
+		align-items : flex-start;
+		flex-wrap   : wrap-reverse;
+  }
